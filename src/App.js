@@ -29,7 +29,7 @@ class App extends Component {
   }
 }
 
-const List = () => <h2>List</h2>;
-const Add = () => <h2>Add</h2>;
+const List = () => <h2 tabindex="-1" ref={heading => heading && heading.focus()}>List</h2>;
+const Add = () => <h2 tabindex="-1" ref={heading => heading && heading.focus()}>Add</h2>;
 
 export default App;
